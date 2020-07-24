@@ -12,6 +12,10 @@ body{
     color: var(--color-white);
 }
 
+.img{
+    max-width: 100%;
+}
+
 .logo{  
     display: block;
     margin-left: 50px;
@@ -23,6 +27,7 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 3em;
     margin: 50px;
+    justify-content: center;
 }
 
 .container{
@@ -37,4 +42,22 @@ body{
     font-size: 1em;
     font-family: var(--poppins);
     padding: 1em 5em;
+}
+
+.social{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    
+}
+.social a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px
 }
