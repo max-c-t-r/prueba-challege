@@ -12,14 +12,16 @@ body{
     color: var(--color-white);
 }
 
-.img{
-    max-width: 100%;
+.contents img{
+    width: 100%;
+}
+.logo img{
+    width: 100%;
 }
 
 .logo{  
-    display: block;
-    margin-left: 50px;
-    margin-top: 50px;
+    display: inline-block;
+    margin: 50px;
 }
 
 .contents{
@@ -35,6 +37,7 @@ body{
 }
 
 .button{
+    display: inline-block;
     background-color: var(--color-white);
     color: var(--color-violet);
     border: none;
@@ -42,6 +45,7 @@ body{
     font-size: 1em;
     font-family: var(--poppins);
     padding: 1em 5em;
+    
 }
 
 .social{
@@ -51,6 +55,7 @@ body{
     margin-bottom: 1em;
     
 }
+
 .social a{
     color: white;
     border: 1px solid white;
@@ -60,4 +65,35 @@ body{
     line-height: 30px;
     text-align: center;
     margin: 10px
+}
+
+@media screen and (max-width: 768px){
+
+    .container{
+        text-align: center;
+    }
+    .container h1{
+        font-size: 1.5em;
+    }
+
+    .contents .img-mockups{
+        grid-column: 1/-1;
+    }
+
+    .contents .container{
+        grid-column: 1/-1;
+    }
+
+    .social{
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .button{
+        width: 50%;
+        padding: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
 }
